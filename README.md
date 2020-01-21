@@ -41,10 +41,10 @@ Get the newest LTS node => [https://nodejs.org](https://nodejs.org)
 
 1. Click on the little debugger symbol on the far left nav then click the play button
 
-    ![debug]({{site.baseurl}}/images/debug.png)
+    ![debug](readme/debug.png)
 
 1. Wait about a minute. This first run needs to install some things. Then a browser should pop open on port 5001 and look something like this.
 
     >https://localhost:5001/
 
-    ![start-success]({{site.baseurl}}/images/start-success.png)
+    ![start-success](readme/start-success.png)
