@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using hacker_news_dotnet_angular.Core.Interfaces;
+using hacker_news_dotnet_angular.Infrastructure;
+
 namespace hacker_news_dotnet_angular
 {
     public class Startup
@@ -20,6 +23,9 @@ namespace hacker_news_dotnet_angular
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddTransient<IHackerNewsRepository, HackerNewsRepository>();
+
             services.AddControllersWithViews();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
